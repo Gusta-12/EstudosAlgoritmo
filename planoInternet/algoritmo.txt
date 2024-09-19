@@ -1,0 +1,20 @@
+/*
+João tem uma quota de X (nesse exemplo: x = 200Mb) por mês; SE ele não utilizar tudo, ele ganha uma quota/'crédito'(se ele usar 150mb dos 200, no mês seguinte ele poderá usar até 250mb; se ele usar 220, então a quota dele será de 30mb (50 - 20 = 30))
+- Pegar a quota mensal (X) (Limite de mb por mês)
+- Quantos mb usou em cada um dos N meses
+- Exibir quantos mb João tem para usar no mês N+1
+Restrições: 1 <= X <= 100 -> max. de mb por mês
+            1 <= N <= 100 -> meses
+            0 <= M_i <= 10000 para 1 <= i <= N -> qtde de mb usados por mês
+            M_i NUNCA pode ser maior do que a qtde de mb que João tem para usar no mês
+*/
+Algoritmo planoInternet
+    Inteiro: quotaM, meses, uso // Quota por Mês; qtde de meses; MB usados em cada mês
+Inicio
+    // Pegando os dados de referência
+    Escreva('Quota mensal: ')
+    Leia(quotaM)
+    Escreva('Período de meses: ')
+    Leia(meses)
+    
+Fim

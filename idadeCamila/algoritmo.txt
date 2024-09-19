@@ -1,0 +1,29 @@
+/*
+Cibele, Camila e Celeste são três irmãs; Sabe-se que Cibele nasceu antes de Camila, e Celeste nasceu depois de Camila;
+Escrever um programa indicando a idade das irmãs, e determinar qual a idade de Camila
+Cibele -> mais velha
+Camila -> do meio
+Celeste -> mais nova
+*/
+
+Algoritmo idadeCamila
+    Inteiro: n1, n2, n3, camilaIdade
+Inicio
+    // Pegando as idades das irmãs
+    Leia(n1)
+    Leia(n2)
+    Leia(n3)
+
+    // Pegando a idade de Camila
+    Se (n2 <= n1 <= n3 ou n3 <= n1 <= n2) faca:
+        camilaIdade = n1
+    SeNao:
+        Se (n1 <= n2 <= n3 ou n3 <= n2 <= n1) faca:
+            camilaIdade = n2
+        SeNao:
+            camilaIdade = n3
+        FimSe
+    FimSe
+
+    Escreva('Camila tem ' + camilaIdade + ' anos')
+Fim
